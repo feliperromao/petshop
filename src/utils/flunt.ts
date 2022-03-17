@@ -1,6 +1,10 @@
 export class Flunt {
 
-  errors: any[]
+  public errors: any[]
+
+  constructor() {
+    this.errors = []
+  }
 
   isRequired = (value, message) => {
     if (!value || value.length <= 0)
